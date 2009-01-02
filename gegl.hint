@@ -1,5 +1,5 @@
 category: Gnome Graphics
-requires: cygwin glib2 gtk2-x11 libbabl0.0 libcairo2 libgegl0.0 libpng12
+requires: cygwin libglib2.0_0 libgtk2.0_0 libbabl0.0 libcairo2 libgegl0.0_0 libpng12
 sdesc: "Generic Graphics Library"
 ldesc: "GEGL (Generic Graphics Library) is a graph based image 
 processing framework.
