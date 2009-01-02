@@ -1,0 +1,12 @@
+DESCRIPTION="Generic Graphics Library"
+HOMEPAGE="http://www.gegl.org/"
+SRC_URI="ftp://ftp.gtk.org/pub/${PN}/${PV_MAJ_MIN}/${P}.tar.bz2"
+PATCH_URI="
+	mirror://portage/media-libs/gegl/files/gegl-0.0.18-newffmpeg.diff
+	0.0.18-no-undefined.patch
+"
+
+PKG_NAMES="${PN} libgegl0.0 libgegl0.0-devel"
+gegl_CONTENTS="usr/bin/gegl.exe usr/share/doc/"
+libgegl0_0_CONTENTS="usr/bin/cyggegl-0.0-0.dll usr/lib/gegl-0.0/"
+libgegl0_0_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"

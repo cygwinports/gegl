@@ -1,0 +1,16 @@
+--- origsrc/gegl-0.0.18/gegl/Makefile.am	2008-06-14 11:40:06.000000000 -0500
++++ src/gegl-0.0.18/gegl/Makefile.am	2008-07-16 03:43:44.796875000 -0500
+@@ -1,4 +1,4 @@
+-if OS_WIN32
++if PLATFORM_WIN32
+ no_undefined = -no-undefined
+ endif
+ 
+--- origsrc/gegl-0.0.18/operations/Makefile-common.am	2008-06-14 11:40:04.000000000 -0500
++++ src/gegl-0.0.18/operations/Makefile-common.am	2008-07-16 03:43:33.312500000 -0500
+@@ -1,4 +1,4 @@
+-if OS_WIN32
++if PLATFORM_WIN32
+ no_undefined = -no-undefined
+ libgegl = $(top_builddir)/gegl/libgegl-$(GEGL_API_VERSION).la @BABL_LIBS@
+ endif
