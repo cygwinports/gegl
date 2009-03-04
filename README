@@ -9,20 +9,20 @@ minimal dependencies. and a simple well defined API.
 
 Runtime requirements:
   cygwin-1.5.25-15
-  libavcodec51-13777-1
-  libavformat52-13777-1
-  libavutil49-13777-1
+  libavcodec52-17736-1
+  libavformat52-17736-1
+  libavutil49-17736-1
   libbabl0.0-0.0.22-1
   libcairo2-1.8.6-1
-  libgdk_pixbuf2.0_0-2.14.6-1
-  libglib2.0_0-2.18.3-1
-  libgtk2.0_0-2.14.6-1
+  libgdk_pixbuf2.0_0-2.14.7-2
+  libglib2.0_0-2.18.4-1
+  libgtk2.0_0-2.14.7-2
   libintl8-0.17-2
   libjpeg62-6b-12
   libopenexr6-1.6.1-1
   libopenraw1-0.0.5-1
   libpango1.0_0-1.20.5-1
-  libpng12-1.2.33-1
+  libpng12-1.2.34-1
   librsvg2_2-2.22.3-1
   libSDL1.2_0-1.2.13-2
 
@@ -36,7 +36,7 @@ Build requirements:
   gcc-core-3.4.4-3
   gtk-doc-1.11-1
   libtool-2.2.6a-1
-  make-3.81-1
+  make-3.81-2
   pkg-config-0.23a-2
   sed-4.1.5-2
 
@@ -307,6 +307,9 @@ Files included in the binary packages:
 ------------------
 
 Port Notes:
+
+----- version 0.0.22-2 -----
+Rebuilt for API changes in FFmpeg.
 
 ----- version 0.0.22-1 -----
 Version bump.
