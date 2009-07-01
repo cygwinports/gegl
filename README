@@ -8,36 +8,35 @@ compositing and processing core. This core is being designed to have
 minimal dependencies. and a simple well defined API.
 
 Runtime requirements:
-  cygwin-1.5.25-15
-  libavcodec52-17736-1
-  libavformat52-17736-1
-  libavutil49-17736-1
-  libbabl0.0-0.0.22-1
-  libcairo2-1.8.6-1
-  libgdk_pixbuf2.0_0-2.14.7-2
-  libglib2.0_0-2.18.4-1
-  libgtk2.0_0-2.14.7-2
-  libintl8-0.17-2
-  libjpeg62-6b-12
-  libopenexr6-1.6.1-1
-  libopenraw1-0.0.5-1
-  libpango1.0_0-1.20.5-1
-  libpng12-1.2.34-1
-  librsvg2_2-2.22.3-1
-  libSDL1.2_0-1.2.13-2
+  cygwin-1.7.0-50
+  libbabl0.0_0-0.0.22-10
+  libcairo2-1.8.6-10
+  libgcc1-4.3.2-2
+  libgdk_pixbuf2.0_0-2.16.2-1
+  libglib2.0_0-2.20.3-1
+  libgtk2.0_0-2.16.2-1
+  libintl8-0.17-11
+  libjpeg62-6b-20
+  libopenexr6-1.6.1-10
+  libopenraw1-0.0.6-10
+  libpango1.0_0-1.24.2-1
+  libpng12-1.2.35-10
+  librsvg2_2-2.26.0-1
+  libSDL1.2_0-1.2.13-10
+  libstdc++6-4.3.2-2
 
 Build requirements:
 (besides corresponding -devel packages)
-  autoconf2.5-2.63-1
-  automake1.9-1.9.6-3
+  autoconf2.5-2.63-10
+  automake1.9-1.9.6-10
   binutils-20080624-2
-  cygport-0.4.3-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  gtk-doc-1.11-1
-  libtool-2.2.6a-1
+  cygport-0.9.7-1
+  gawk-3.1.6-2
+  gcc4-core-4.3.2-2
+  gtk-doc-1.11-2
+  libtool-2.2.7a-13
   make-3.81-2
-  pkg-config-0.23a-2
+  pkg-config-0.23b-10
   sed-4.1.5-2
 
 Canonical website:
@@ -67,12 +66,11 @@ Files included in the binary packages:
 
 (gegl)
   /usr/bin/gegl.exe
-  /usr/share/doc/gegl-0.0.22/AUTHORS
-  /usr/share/doc/gegl-0.0.22/COPYING
-  /usr/share/doc/gegl-0.0.22/ChangeLog
-  /usr/share/doc/gegl-0.0.22/INSTALL
-  /usr/share/doc/gegl-0.0.22/NEWS
-  /usr/share/doc/gegl-0.0.22/README
+  /usr/share/doc/gegl/AUTHORS
+  /usr/share/doc/gegl/COPYING
+  /usr/share/doc/gegl/ChangeLog
+  /usr/share/doc/gegl/NEWS
+  /usr/share/doc/gegl/README
 
 (libgegl0.0_0)
   /usr/bin/cyggegl-0.0-0.dll
@@ -134,10 +132,6 @@ Files included in the binary packages:
   /usr/lib/gegl-0.0/exclusion.la
   /usr/lib/gegl-0.0/exr-load.dll
   /usr/lib/gegl-0.0/exr-load.la
-  /usr/lib/gegl-0.0/ff-load.dll
-  /usr/lib/gegl-0.0/ff-load.la
-  /usr/lib/gegl-0.0/fill.dll
-  /usr/lib/gegl-0.0/fill.la
   /usr/lib/gegl-0.0/fractal-explorer.dll
   /usr/lib/gegl-0.0/fractal-explorer.la
   /usr/lib/gegl-0.0/gamma.dll
@@ -188,6 +182,8 @@ Files included in the binary packages:
   /usr/lib/gegl-0.0/over.la
   /usr/lib/gegl-0.0/overlay.dll
   /usr/lib/gegl-0.0/overlay.la
+  /usr/lib/gegl-0.0/path.dll
+  /usr/lib/gegl-0.0/path.la
   /usr/lib/gegl-0.0/pixbuf.dll
   /usr/lib/gegl-0.0/pixbuf.la
   /usr/lib/gegl-0.0/plus.dll
@@ -308,14 +304,8 @@ Files included in the binary packages:
 
 Port Notes:
 
------ version 0.0.22-2 -----
-Rebuilt for API changes in FFmpeg.
-
------ version 0.0.22-1 -----
-Version bump.
-
------ version 0.0.20-1 -----
-Initial release for Cygwin.
+----- version 0.0.22-10 -----
+Initial release for Cygwin 1.7.
 
 
 Cygwin port maintained by:
