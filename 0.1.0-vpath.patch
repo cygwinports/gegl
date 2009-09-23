@@ -1,0 +1,48 @@
+--- origsrc/gegl-0.1.0/docs/Makefile.am	2009-07-01 11:31:24.000000000 -0500
++++ src/gegl-0.1.0/docs/Makefile.am	2009-09-22 13:47:18.477036200 -0500
+@@ -157,7 +157,7 @@ if HAVE_RUBY
+ 	    $@
+ endif
+ 
+-images/inheritance.png: $(top_srcdir)/docs/Makefile
++images/inheritance.png: Makefile
+ if HAVE_RUBY
+ if HAVE_DOT
+ 	$(top_srcdir)/tools/gobj2dot.rb $(top_srcdir) | $(DOT) -Tpng > $(top_srcdir)/docs/images/inheritance.png
+--- origsrc/gegl-0.1.0/docs/index-static.txt.in	2009-06-28 13:18:36.000000000 -0500
++++ src/gegl-0.1.0/docs/index-static.txt.in	2009-09-22 22:42:54.586565700 -0500
+@@ -112,7 +112,7 @@ http://www.ohloh.net/projects/4349/analy
+ lists are are ordered chronologically according to when they are mentioned in
+ the ChangeLog.
+ 
+-include::../AUTHORS[]
++include::@top_srcdir@/AUTHORS[]
+ 
+ 
+ 
+@@ -218,7 +218,7 @@ mandelbrot fractal. compile it with:
+ This example and others can be found in the examples subdir of the GEGL distribution.
+ 
+ ---------------------------
+-sys::[cat ../examples/hello-world.c]
++sys::[cat @top_srcdir@/examples/hello-world.c]
+ ---------------------------
+ 
+ 
+--- origsrc/gegl-0.1.0/operations/workshop/Makefile.am	2009-04-17 12:15:11.000000000 -0500
++++ src/gegl-0.1.0/operations/workshop/Makefile.am	2009-09-22 22:33:04.325046700 -0500
+@@ -1,2 +1,4 @@
+ SUBDIRS = generated external
+ include $(top_srcdir)/operations/Makefile-operations.am
++
++AM_CPPFLAGS += -I$(top_srcdir)/operations/workshop
+--- origsrc/gegl-0.1.0/operations/workshop/generated/Makefile.am	2009-04-17 12:15:11.000000000 -0500
++++ src/gegl-0.1.0/operations/workshop/generated/Makefile.am	2009-09-22 22:29:34.326837900 -0500
+@@ -1,5 +1,7 @@
+ include $(top_srcdir)/operations/Makefile-operations.am
+ 
++AM_CPPFLAGS += -I$(top_srcdir)/operations/workshop/generated
++
+ EXTRA_DIST += $(wildcard *.rb)
+ 
+ MAINTAINERCLEANFILES = *.c

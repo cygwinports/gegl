@@ -8,29 +8,34 @@ compositing and processing core. This core is being designed to have
 minimal dependencies. and a simple well defined API.
 
 Runtime requirements:
-  cygwin-1.7.0-50
-  libbabl0.0_0-0.0.22-10
-  libcairo2-1.8.6-10
+  cygwin-1.7.0-61
+  libavcodec52-0.5-1
+  libavformat52-0.5-1
+  libavutil49-0.5-1
+  libbabl0.0_0-0.1.0-1
+  libcairo2-1.8.8-1
   libgcc1-4.3.2-2
-  libgdk_pixbuf2.0_0-2.16.2-1
-  libglib2.0_0-2.20.3-1
-  libgtk2.0_0-2.16.2-1
+  libgdk_pixbuf2.0_0-2.16.6-1
+  libglib2.0_0-2.20.5-1
+  libgtk2.0_0-2.16.6-1
   libintl8-0.17-11
-  libjpeg62-6b-20
-  libopenexr6-1.6.1-10
+  libjpeg7-7-10
   libopenraw1-0.0.6-10
-  libpango1.0_0-1.24.2-1
+  libpango1.0_0-1.24.5-1
   libpng12-1.2.35-10
   librsvg2_2-2.26.0-1
-  libSDL1.2_0-1.2.13-10
+  libspiro0-20071029-1
   libstdc++6-4.3.2-2
+  libswscale0-0.5-1
 
 Build requirements:
 (besides corresponding -devel packages)
+  asciidoc-8.4.5-1
   autoconf2.5-2.63-10
   automake1.9-1.9.6-10
-  binutils-20080624-2
-  cygport-0.9.7-1
+  binutils-2.19.51-1
+  cygport-0.9.9-1
+  enscript-1.6.4-2
   gawk-3.1.6-2
   gcc4-core-4.3.2-2
   gtk-doc-1.11-2
@@ -38,6 +43,7 @@ Build requirements:
   make-3.81-2
   pkg-config-0.23b-10
   sed-4.1.5-2
+  w3m-0.5.1-2
 
 Canonical website:
   http://www.gegl.org/
@@ -48,261 +54,26 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack gegl-0.0.22-X-src.tar.bz2
+  unpack gegl-0.1.0-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./gegl-0.0.22-X.cygport all
+  cygport ./gegl-0.1.0-X.cygport all
 
 This will create:
-  /usr/src/gegl-0.0.22-X-src.tar.bz2
-  /usr/src/gegl-0.0.22-X.tar.bz2
-  /usr/src/libgegl0.0-devel-0.0.22-X.tar.bz2
-  /usr/src/libgegl0.0_0-0.0.22-X.tar.bz2
+  /usr/src/gegl-0.1.0-X-src.tar.bz2
+  /usr/src/gegl-0.1.0-X.tar.bz2
+  /usr/src/libgegl0.0-devel-0.1.0-X.tar.bz2
+  /usr/src/libgegl0.0_0-0.1.0-X.tar.bz2
 
 -------------------------------------------
 
-Files included in the binary packages:
-
-(gegl)
-  /usr/bin/gegl.exe
-  /usr/share/doc/gegl/AUTHORS
-  /usr/share/doc/gegl/COPYING
-  /usr/share/doc/gegl/ChangeLog
-  /usr/share/doc/gegl/NEWS
-  /usr/share/doc/gegl/README
-
-(libgegl0.0_0)
-  /usr/bin/cyggegl-0.0-0.dll
-  /usr/lib/gegl-0.0/add.dll
-  /usr/lib/gegl-0.0/add.la
-  /usr/lib/gegl-0.0/affine.dll
-  /usr/lib/gegl-0.0/affine.la
-  /usr/lib/gegl-0.0/bilateral-filter.dll
-  /usr/lib/gegl-0.0/bilateral-filter.la
-  /usr/lib/gegl-0.0/box-blur.dll
-  /usr/lib/gegl-0.0/box-blur.la
-  /usr/lib/gegl-0.0/brightness-contrast.dll
-  /usr/lib/gegl-0.0/brightness-contrast.la
-  /usr/lib/gegl-0.0/c2g.dll
-  /usr/lib/gegl-0.0/c2g.la
-  /usr/lib/gegl-0.0/checkerboard.dll
-  /usr/lib/gegl-0.0/checkerboard.la
-  /usr/lib/gegl-0.0/clear.dll
-  /usr/lib/gegl-0.0/clear.la
-  /usr/lib/gegl-0.0/clone.dll
-  /usr/lib/gegl-0.0/clone.la
-  /usr/lib/gegl-0.0/color-burn.dll
-  /usr/lib/gegl-0.0/color-burn.la
-  /usr/lib/gegl-0.0/color-dodge.dll
-  /usr/lib/gegl-0.0/color-dodge.la
-  /usr/lib/gegl-0.0/color-temperature.dll
-  /usr/lib/gegl-0.0/color-temperature.la
-  /usr/lib/gegl-0.0/color.dll
-  /usr/lib/gegl-0.0/color.la
-  /usr/lib/gegl-0.0/contrast-curve.dll
-  /usr/lib/gegl-0.0/contrast-curve.la
-  /usr/lib/gegl-0.0/convert-format.dll
-  /usr/lib/gegl-0.0/convert-format.la
-  /usr/lib/gegl-0.0/crop.dll
-  /usr/lib/gegl-0.0/crop.la
-  /usr/lib/gegl-0.0/darken.dll
-  /usr/lib/gegl-0.0/darken.la
-  /usr/lib/gegl-0.0/difference-of-gaussians.dll
-  /usr/lib/gegl-0.0/difference-of-gaussians.la
-  /usr/lib/gegl-0.0/difference.dll
-  /usr/lib/gegl-0.0/difference.la
-  /usr/lib/gegl-0.0/display.dll
-  /usr/lib/gegl-0.0/display.la
-  /usr/lib/gegl-0.0/divide.dll
-  /usr/lib/gegl-0.0/divide.la
-  /usr/lib/gegl-0.0/dropshadow.dll
-  /usr/lib/gegl-0.0/dropshadow.la
-  /usr/lib/gegl-0.0/dst-atop.dll
-  /usr/lib/gegl-0.0/dst-atop.la
-  /usr/lib/gegl-0.0/dst-in.dll
-  /usr/lib/gegl-0.0/dst-in.la
-  /usr/lib/gegl-0.0/dst-out.dll
-  /usr/lib/gegl-0.0/dst-out.la
-  /usr/lib/gegl-0.0/dst-over.dll
-  /usr/lib/gegl-0.0/dst-over.la
-  /usr/lib/gegl-0.0/dst.dll
-  /usr/lib/gegl-0.0/dst.la
-  /usr/lib/gegl-0.0/exclusion.dll
-  /usr/lib/gegl-0.0/exclusion.la
-  /usr/lib/gegl-0.0/exr-load.dll
-  /usr/lib/gegl-0.0/exr-load.la
-  /usr/lib/gegl-0.0/fractal-explorer.dll
-  /usr/lib/gegl-0.0/fractal-explorer.la
-  /usr/lib/gegl-0.0/gamma.dll
-  /usr/lib/gegl-0.0/gamma.la
-  /usr/lib/gegl-0.0/gaussian-blur.dll
-  /usr/lib/gegl-0.0/gaussian-blur.la
-  /usr/lib/gegl-0.0/grey.dll
-  /usr/lib/gegl-0.0/grey.la
-  /usr/lib/gegl-0.0/hard-light.dll
-  /usr/lib/gegl-0.0/hard-light.la
-  /usr/lib/gegl-0.0/introspect.dll
-  /usr/lib/gegl-0.0/introspect.la
-  /usr/lib/gegl-0.0/invert.dll
-  /usr/lib/gegl-0.0/invert.la
-  /usr/lib/gegl-0.0/jpg-load.dll
-  /usr/lib/gegl-0.0/jpg-load.la
-  /usr/lib/gegl-0.0/layer.dll
-  /usr/lib/gegl-0.0/layer.la
-  /usr/lib/gegl-0.0/levels.dll
-  /usr/lib/gegl-0.0/levels.la
-  /usr/lib/gegl-0.0/lighten.dll
-  /usr/lib/gegl-0.0/lighten.la
-  /usr/lib/gegl-0.0/load-buffer.dll
-  /usr/lib/gegl-0.0/load-buffer.la
-  /usr/lib/gegl-0.0/load.dll
-  /usr/lib/gegl-0.0/load.la
-  /usr/lib/gegl-0.0/magick-load.dll
-  /usr/lib/gegl-0.0/magick-load.la
-  /usr/lib/gegl-0.0/mblur.dll
-  /usr/lib/gegl-0.0/mblur.la
-  /usr/lib/gegl-0.0/mono-mixer.dll
-  /usr/lib/gegl-0.0/mono-mixer.la
-  /usr/lib/gegl-0.0/multiply.dll
-  /usr/lib/gegl-0.0/multiply.la
-  /usr/lib/gegl-0.0/noise.dll
-  /usr/lib/gegl-0.0/noise.la
-  /usr/lib/gegl-0.0/nop.dll
-  /usr/lib/gegl-0.0/nop.la
-  /usr/lib/gegl-0.0/normal.dll
-  /usr/lib/gegl-0.0/normal.la
-  /usr/lib/gegl-0.0/opacity.dll
-  /usr/lib/gegl-0.0/opacity.la
-  /usr/lib/gegl-0.0/open-buffer.dll
-  /usr/lib/gegl-0.0/open-buffer.la
-  /usr/lib/gegl-0.0/openraw.dll
-  /usr/lib/gegl-0.0/openraw.la
-  /usr/lib/gegl-0.0/over.dll
-  /usr/lib/gegl-0.0/over.la
-  /usr/lib/gegl-0.0/overlay.dll
-  /usr/lib/gegl-0.0/overlay.la
-  /usr/lib/gegl-0.0/path.dll
-  /usr/lib/gegl-0.0/path.la
-  /usr/lib/gegl-0.0/pixbuf.dll
-  /usr/lib/gegl-0.0/pixbuf.la
-  /usr/lib/gegl-0.0/plus.dll
-  /usr/lib/gegl-0.0/plus.la
-  /usr/lib/gegl-0.0/png-load.dll
-  /usr/lib/gegl-0.0/png-load.la
-  /usr/lib/gegl-0.0/png-save.dll
-  /usr/lib/gegl-0.0/png-save.la
-  /usr/lib/gegl-0.0/raw-load.dll
-  /usr/lib/gegl-0.0/raw-load.la
-  /usr/lib/gegl-0.0/rectangle.dll
-  /usr/lib/gegl-0.0/rectangle.la
-  /usr/lib/gegl-0.0/remap.dll
-  /usr/lib/gegl-0.0/remap.la
-  /usr/lib/gegl-0.0/save-buffer.dll
-  /usr/lib/gegl-0.0/save-buffer.la
-  /usr/lib/gegl-0.0/save-pixbuf.dll
-  /usr/lib/gegl-0.0/save-pixbuf.la
-  /usr/lib/gegl-0.0/screen.dll
-  /usr/lib/gegl-0.0/screen.la
-  /usr/lib/gegl-0.0/shift.dll
-  /usr/lib/gegl-0.0/shift.la
-  /usr/lib/gegl-0.0/snn-mean.dll
-  /usr/lib/gegl-0.0/snn-mean.la
-  /usr/lib/gegl-0.0/soft-light.dll
-  /usr/lib/gegl-0.0/soft-light.la
-  /usr/lib/gegl-0.0/src-atop.dll
-  /usr/lib/gegl-0.0/src-atop.la
-  /usr/lib/gegl-0.0/src-in.dll
-  /usr/lib/gegl-0.0/src-in.la
-  /usr/lib/gegl-0.0/src-out.dll
-  /usr/lib/gegl-0.0/src-out.la
-  /usr/lib/gegl-0.0/src-over.dll
-  /usr/lib/gegl-0.0/src-over.la
-  /usr/lib/gegl-0.0/src.dll
-  /usr/lib/gegl-0.0/src.la
-  /usr/lib/gegl-0.0/stress.dll
-  /usr/lib/gegl-0.0/stress.la
-  /usr/lib/gegl-0.0/stretch-contrast.dll
-  /usr/lib/gegl-0.0/stretch-contrast.la
-  /usr/lib/gegl-0.0/subtract.dll
-  /usr/lib/gegl-0.0/subtract.la
-  /usr/lib/gegl-0.0/svg-huerotate.dll
-  /usr/lib/gegl-0.0/svg-huerotate.la
-  /usr/lib/gegl-0.0/svg-load.dll
-  /usr/lib/gegl-0.0/svg-load.la
-  /usr/lib/gegl-0.0/svg-luminancetoalpha.dll
-  /usr/lib/gegl-0.0/svg-luminancetoalpha.la
-  /usr/lib/gegl-0.0/svg-matrix.dll
-  /usr/lib/gegl-0.0/svg-matrix.la
-  /usr/lib/gegl-0.0/svg-multiply.dll
-  /usr/lib/gegl-0.0/svg-multiply.la
-  /usr/lib/gegl-0.0/svg-saturate.dll
-  /usr/lib/gegl-0.0/svg-saturate.la
-  /usr/lib/gegl-0.0/text.dll
-  /usr/lib/gegl-0.0/text.la
-  /usr/lib/gegl-0.0/threshold.dll
-  /usr/lib/gegl-0.0/threshold.la
-  /usr/lib/gegl-0.0/tonemap.dll
-  /usr/lib/gegl-0.0/tonemap.la
-  /usr/lib/gegl-0.0/unsharp-mask.dll
-  /usr/lib/gegl-0.0/unsharp-mask.la
-  /usr/lib/gegl-0.0/value-invert.dll
-  /usr/lib/gegl-0.0/value-invert.la
-  /usr/lib/gegl-0.0/whitebalance.dll
-  /usr/lib/gegl-0.0/whitebalance.la
-  /usr/lib/gegl-0.0/write-buffer.dll
-  /usr/lib/gegl-0.0/write-buffer.la
-  /usr/lib/gegl-0.0/xor.dll
-  /usr/lib/gegl-0.0/xor.la
-
-(libgegl0.0-devel)
-  /usr/include/gegl-0.0/gegl-buffer.h
-  /usr/include/gegl-0.0/gegl-chant.h
-  /usr/include/gegl-0.0/gegl-color.h
-  /usr/include/gegl-0.0/gegl-curve.h
-  /usr/include/gegl-0.0/gegl-paramspecs.h
-  /usr/include/gegl-0.0/gegl-plugin.h
-  /usr/include/gegl-0.0/gegl-simd.h
-  /usr/include/gegl-0.0/gegl-utils.h
-  /usr/include/gegl-0.0/gegl.h
-  /usr/include/gegl-0.0/operation/gegl-operation-area-filter.h
-  /usr/include/gegl-0.0/operation/gegl-operation-composer.h
-  /usr/include/gegl-0.0/operation/gegl-operation-composer3.h
-  /usr/include/gegl-0.0/operation/gegl-operation-filter.h
-  /usr/include/gegl-0.0/operation/gegl-operation-meta.h
-  /usr/include/gegl-0.0/operation/gegl-operation-point-composer.h
-  /usr/include/gegl-0.0/operation/gegl-operation-point-composer3.h
-  /usr/include/gegl-0.0/operation/gegl-operation-point-filter.h
-  /usr/include/gegl-0.0/operation/gegl-operation-point-render.h
-  /usr/include/gegl-0.0/operation/gegl-operation-sink.h
-  /usr/include/gegl-0.0/operation/gegl-operation-source.h
-  /usr/include/gegl-0.0/operation/gegl-operation-temporal.h
-  /usr/include/gegl-0.0/operation/gegl-operation.h
-  /usr/lib/libgegl-0.0.dll.a
-  /usr/lib/libgegl-0.0.la
-  /usr/lib/pkgconfig/gegl.pc
-  /usr/share/gtk-doc/html/gegl/api.html
-  /usr/share/gtk-doc/html/gegl/brightness-contrast.c.html
-  /usr/share/gtk-doc/html/gegl/gegl-operation-area-filter.h.html
-  /usr/share/gtk-doc/html/gegl/gegl-operation-composer.h.html
-  /usr/share/gtk-doc/html/gegl/gegl-operation-filter.h.html
-  /usr/share/gtk-doc/html/gegl/gegl-operation-meta.h.html
-  /usr/share/gtk-doc/html/gegl/gegl-operation-point-composer.h.html
-  /usr/share/gtk-doc/html/gegl/gegl-operation-point-filter.h.html
-  /usr/share/gtk-doc/html/gegl/gegl-operation-point-render.h.html
-  /usr/share/gtk-doc/html/gegl/gegl-operation-sink.h.html
-  /usr/share/gtk-doc/html/gegl/gegl-operation-source.h.html
-  /usr/share/gtk-doc/html/gegl/gegl-operation-temporal.h.html
-  /usr/share/gtk-doc/html/gegl/gegl-operation.h.html
-  /usr/share/gtk-doc/html/gegl/gegl-plugin.h.html
-  /usr/share/gtk-doc/html/gegl/gegl.css
-  /usr/share/gtk-doc/html/gegl/gegl.devhelp
-  /usr/share/gtk-doc/html/gegl/gegl.h.html
-  /usr/share/gtk-doc/html/gegl/operations.html
-
-------------------
-
 Port Notes:
+
+----- version 0.1.0-1 -----
+Version bump.
+Enabled FFmpeg and Spiro support.
+Temporarily disabled OpenEXR support.
 
 ----- version 0.0.22-10 -----
 Initial release for Cygwin 1.7.
