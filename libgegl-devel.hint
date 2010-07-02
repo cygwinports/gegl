@@ -1,5 +1,5 @@
 category: Gnome Graphics
-requires: libglib2.0-devel libbabl0.0-devel gettext libgegl0.0_0
+requires: libglib2.0-devel libbabl-devel gettext libgegl0.1_0
 external-source: gegl
 sdesc: "Generic Graphics Library (development)"
 ldesc: "GEGL (Generic Graphics Library) is a graph based image 
