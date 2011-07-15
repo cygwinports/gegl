@@ -9,4 +9,4 @@ libgegl0_1_0_CONTENTS="usr/bin/cyggegl-0.1-0.dll usr/lib/gegl-0.1/"
 libgegl_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/" # usr/share/gtk-doc/"
 
 # openexr: libIlm* are broken, not sure why
-CYGCONF_ARGS="--enable-workshop --without-libv4l --without-openexr"
+CYGCONF_ARGS="--enable-workshop --without-libv4l"
