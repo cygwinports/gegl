@@ -1,0 +1,13 @@
+DESCRIPTION="Generic Graphics Library"
+HOMEPAGE="http://www.gegl.org/"
+SRC_URI="ftp://ftp.gimp.org/pub/${PN}/${PV_MAJ_MIN}/${P}.tar.bz2"
+PATCH_URI="0.1.8-vala-deps.patch"
+
+PKG_NAMES="${PN} libgegl0.1_0 libgegl-devel girepository-Gegl0.1 vala-gegl0.1"
+gegl_CONTENTS="usr/bin/gegl.exe usr/share/doc/"
+libgegl0_1_0_CONTENTS="usr/bin/cyggegl-0.1-0.dll usr/lib/gegl-0.1/"
+libgegl_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
+girepository_Gegl0_1_CONTENTS="usr/*/gir*/Gegl-0.1.*"
+vala_gegl0_1_CONTENTS="usr/share/vala/"
+
+CYGCONF_ARGS="--without-libv4l"

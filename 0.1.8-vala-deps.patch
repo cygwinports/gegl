@@ -1,0 +1,12 @@
+--- origsrc/gegl-0.1.8/gegl/Makefile.am	2011-11-18 10:00:53.000000000 -0600
++++ src/gegl-0.1.8/gegl/Makefile.am	2011-12-13 21:26:04.620319600 -0600
+@@ -157,3 +157,5 @@ gegl-enums.c: $(srcdir)/gegl-enums.h
+ 		$(srcdir)/gegl-enums.h > xgen-tec \
+ 	&& cp xgen-tec $(@F) \
+ 	&& rm -f xgen-tec
++
++EXTRA_DIST = gegl-@GEGL_API_VERSION@.deps
+--- origsrc/gegl-0.1.8/gegl/gegl-0.1.deps	1969-12-31 18:00:00.000000000 -0600
++++ src/gegl-0.1.8/gegl/gegl-0.1.deps	2011-12-13 21:26:12.979797700 -0600
+@@ -0,0 +1 @@
++babl-0.1

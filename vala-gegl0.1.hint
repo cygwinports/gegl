@@ -1,7 +1,7 @@
 category: Gnome Graphics
-requires: libavcodec52 libavformat52 libavutil50 libbabl0.1_0 libcairo2 libgcc1 libgdk_pixbuf2.0_0 libglib2.0_0 libIlmImf6 libintl8 libjasper1 libjpeg8 libopenraw1 libpango1.0_0 libpng14 librsvg2_2 libSDL1.2_0 libspiro0 libstdc++6
+requires: vala-babl0.1
 external-source: gegl
-sdesc: "Generic Graphics Library (runtime)"
+sdesc: "Generic Graphics Library (Vala bindings)"
 ldesc: "GEGL (Generic Graphics Library) is a graph based image 
 processing framework.
 

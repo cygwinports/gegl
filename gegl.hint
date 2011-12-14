@@ -1,6 +1,6 @@
 category: Gnome Graphics
-requires: libgegl0.1_0 libglib2.0_0 libspiro0
-sdesc: "Generic Graphics Library (command line tool)"
+requires:
+sdesc: "Generic Graphics Library (sources)"
 ldesc: "GEGL (Generic Graphics Library) is a graph based image 
 processing framework.
 
