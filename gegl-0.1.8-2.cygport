@@ -11,3 +11,5 @@ girepository_Gegl0_1_CONTENTS="usr/*/gir*/Gegl-0.1.*"
 vala_gegl0_1_CONTENTS="usr/share/vala/"
 
 CYGCONF_ARGS="--without-libv4l"
+
+KEEP_LA_FILES="none"
