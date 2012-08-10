@@ -6,7 +6,7 @@
  	&& rm -f xgen-tec
 +
 +EXTRA_DIST = gegl-@GEGL_API_VERSION@.deps
---- origsrc/gegl-0.1.8/gegl/gegl-0.1.deps	1969-12-31 18:00:00.000000000 -0600
-+++ src/gegl-0.1.8/gegl/gegl-0.1.deps	2011-12-13 21:26:12.979797700 -0600
+--- origsrc/gegl-0.2.0/gegl/gegl-0.2.deps
++++ src/gegl-0.2.0/gegl/gegl-0.2.deps
 @@ -0,0 +1 @@
 +babl-0.1
