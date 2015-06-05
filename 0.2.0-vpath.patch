@@ -1,0 +1,7 @@
+--- origsrc/gegl-0.2.0/operations/workshop/Makefile.am	2012-03-24 09:51:30.000000000 -0500
++++ src/gegl-0.2.0/operations/workshop/Makefile.am	2015-06-04 18:42:22.782624000 -0500
+@@ -1,2 +1,4 @@
+ SUBDIRS = generated external
+ include $(top_srcdir)/operations/Makefile-operations.am
++
++AM_CPPFLAGS += -I$(top_srcdir)/operations/workshop
