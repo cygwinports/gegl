@@ -1,6 +1,6 @@
 NAME="gegl"
 VERSION=0.2.0
-RELEASE=6
+RELEASE=7
 CATEGORY="Libs"
 SUMMARY="Generic Graphics Library"
 DESCRIPTION="GEGL (Generic Graphics Library) is a graph based image processing
