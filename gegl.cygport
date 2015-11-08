@@ -21,6 +21,7 @@ PKG_NAMES="gegl libgegl0.2_0 libgegl0.2-devel" # girepository-Gegl0.2 vala-gegl0
 gegl_CATEGORY="Graphics"
 gegl_CONTENTS="usr/bin/gegl.exe usr/share/doc/"
 libgegl0_2_0_SUMMARY="${SUMMARY} (runtime)"
+libgegl0_2_0_REQUIRES="dcraw" # raw-load, rawbayer-load
 libgegl0_2_0_CONTENTS="usr/bin/cyggegl-0.2-0.dll usr/lib/gegl-0.2/ usr/share/locale/"
 libgegl0_2_devel_SUMMARY="${SUMMARY} (development)"
 libgegl0_2_devel_CONTENTS="usr/include/ usr/lib/lib* usr/lib/pkgconfig/ usr/share/gtk-doc/"
