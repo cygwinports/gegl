@@ -1,6 +1,6 @@
 NAME="gegl"
 VERSION=0.2.0
-RELEASE=10
+RELEASE=11
 CATEGORY="Libs"
 SUMMARY="Generic Graphics Library"
 DESCRIPTION="GEGL (Generic Graphics Library) is a graph based image processing
@@ -14,6 +14,7 @@ PATCH_URI="
 	http://pkgs.fedoraproject.org/cgit/gegl.git/plain/gegl-0.2.0-CVE-2012-4433.patch
 	http://pkgs.fedoraproject.org/cgit/gegl.git/plain/gegl-0.2.0-remove-src-over-op.patch
 	http://pkgs.fedoraproject.org/cgit/gegl.git/plain/0001-matting-levin-Fix-the-build-with-recent-suitesparse-.patch
+	http://pkgs.fedoraproject.org/cgit/gegl.git/plain/gegl-0.2.0-libopenraw.patch
 	0.2.0-vpath.patch
 "
 
